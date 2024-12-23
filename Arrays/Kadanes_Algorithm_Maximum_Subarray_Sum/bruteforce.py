@@ -23,11 +23,13 @@ class Solution(object):
 
                 max_sub_arr_sum = max(max_sub_arr_sum, sub_arr_sum)
 
-
+        # Time complexity is O(N^3), N = size of the array.
+        # Space complexity is O(1), as we are not using any extra space.
         return max_sub_arr_sum
 
 if __name__ == "__main__":
     nums = [-1, 0]
+    nums = [-1, 0, 1, 2, 3, -7]
 
     sol = Solution()
     max_sum = sol.maxSubArray(nums)
